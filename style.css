@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    z-index: 100000000;
+}
+
+header ul {
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header ul li:first-child {
+    border-bottom: 2px solid black;
+}
+
+header ul li {
+    transition: 0.3s ease-in-out;
+}
+
+header ul li:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+header .search {
+    height: 40%;
+    width: 13%;
+    background-color: rgba(230, 230, 230, 0.829);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+header .search input {
+    width: 70%;
+    border: none;
+    background-color: rgba(230, 230, 230, 0.103);
+    color: black;
+    height: 90%;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+
+header .buttonsBox {
+    width: 10%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .buttonsBox span {
+    font-size: 1.5rem;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 6%;
+}
+
+
+.categories {
+    width: 13vw;
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+
+.categories ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categories ul li {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s ease-in-out;
+}
+
+.categories ul li:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.categories ul li span {
+    font-size: 1.2rem;
+}
+
+
+
+.swiper {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 60vw;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.categoriaUm {
+    width: 100vw;
+    height: 35vh;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30vw;
+    position: absolute;
+    top: 60vh;
+}
+
+
+.categoriaUm .boxAbout {
+    width: 13vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itemShow {
+    width: 68% !important;
+    height: 70%;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.itemShow .boxItem {
+    height: 100%;
+    width: 22%;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    margin-right: 2vw;
+}
+
+.itemShow .boxItem:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.itemShow .boxItem img {
+    height: 40%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 2vh;
+}
+
+.itemShow .boxItem p {
+    font-size: 0.8rem;
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+.itemShow .boxItem h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
+
+
+footer {
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(80, 80, 80);
+    position: absolute;
+    top: 200vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer div {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+footer div h3 {
+    margin-top: 2vh;
+    font-weight: 400;
+}
+
+footer div h2 {
+    margin-top: 2vh;
+    font-weight: 400;
+}
+
